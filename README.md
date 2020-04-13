@@ -3,7 +3,8 @@
 [![Gem Version](https://badge.fury.io/rb/payhere-sdk-sdk.svg)](https://badge.fury.io/rb/payhere-sdk-sdk)
 [![Build Status](https://travis-ci.com/rileydigitalservices/payhere-sdk-sdk.svg?branch=master)](https://travis-ci.com/rileydigitalservices/payhere-sdk-sdk)
 [![Coverage Status](https://coveralls.io/repos/github/rileydigitalservices/payhere-sdk-sdk/badge.svg?branch=master)](https://coveralls.io/github/rileydigitalservices/payhere-sdk-sdk?branch=master)
-[![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/momo-api-developers/)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
+[![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/payhere-api-sdk/)
 
 ## Usage
 
