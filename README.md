@@ -1,7 +1,7 @@
-# Riley Digital Services Payhere API Ruby Gem
+# Payhere API Ruby Gem
 
 [![Gem Version](https://badge.fury.io/rb/payhere-sdk.svg)](https://badge.fury.io/rb/payhere-sdk)
-[![Build Status](https://travis-ci.com/rileydigitalservices/payhere-sdk.svg?branch=master)](https://travis-ci.com/rileydigitalservices/payhere-sdk)
+[![Build Status](https://travis-ci.org/rileydigitalservices/payhere-sdk.svg?branch=master)](https://travis-ci.org/rileydigitalservices/payhere-sdk)
 [![Coverage Status](https://coveralls.io/repos/github/rileydigitalservices/payhere-sdk/badge.svg?branch=master)](https://coveralls.io/github/rileydigitalservices/payhere-sdk?branch=master)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
 [![Join the community on Spectrum](https://withspectrum.github.io/badge/badge.svg)](https://spectrum.chat/payhere-api-sdk/)
