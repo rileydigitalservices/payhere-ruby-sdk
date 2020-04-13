@@ -97,8 +97,22 @@ The 'transfer' method for Outpayemts follows the same format as 'request_to_pay'
 For additional documentation, please refer to this link: https://apidocs.payhere.africa
 
 ## Contributing
-
 Bug reports and pull requests are welcome on GitHub at https://github.com/rileydigitalservices/payhere-ruby-sdk. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+
+## Development
+
+Install the gems using bundler
+
+```bash
+bundle install
+```
+
+Run the the unit tests:
+
+```bash
+rspec
+```
+
 
 ## License
 
