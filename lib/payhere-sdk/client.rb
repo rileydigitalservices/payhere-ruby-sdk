@@ -53,7 +53,7 @@ module Payhere
       }
       conn = Faraday.new(url: url)
       conn.headers = headers
-      url = "http://sandbox.payhere.africa/api/#{Payhere.config.version}" if Payhere.config.environment.eql?"sanbox"
+      url = "https://api-sandbox.payhere.africa/api/#{Payhere.config.version}" if Payhere.config.environment.eql?"sanbox"
 
       get_credentials
       conn.basic_auth(@username, @password)

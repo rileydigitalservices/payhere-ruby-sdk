@@ -19,7 +19,7 @@ module Payhere
     end
 
     def base_url
-      @base_url || 'http://api.payhere.africa'
+      @base_url || 'https://api.payhere.africa'
     end
   end
 end

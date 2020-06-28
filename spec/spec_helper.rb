@@ -21,7 +21,7 @@ RSpec.configure do |config|
   end
 
   config.before(:each) do
-    stub_request(:get, /sandbox.payhere.africa/)
+    stub_request(:get, /api-sandbox.payhere.africa/)
       .with(headers: {
               "Content-Type": 'application/json'
             })

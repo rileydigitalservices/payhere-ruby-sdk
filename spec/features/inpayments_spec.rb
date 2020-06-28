@@ -5,7 +5,7 @@ require 'spec_helper'
 RSpec.describe Payhere::Inpayments do
   before(:all) do
     Payhere.configure do |config|
-      config.base_url = 'http://sandbox.payhere.africa'
+      config.base_url = 'https://api-sandbox.payhere.africa'
       config.username = 'sdk'
       config.password = 'sdk@2020'
       config.app_id = '11012'
