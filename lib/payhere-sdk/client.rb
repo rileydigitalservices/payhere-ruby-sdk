@@ -14,12 +14,13 @@ module Payhere
     def send_request(method, path, body = {})
       begin
         conn = create_connection
+        relative_path = "/api/#{Payhere.config.version}#{path}"
 
         case method
-        when 'get'
-          response = conn.get(path)
-        when 'post'
-          response = conn.post(path, body.to_json)
+          when 'get'
+            response = conn.get(relative_path)
+          when 'post'
+            response = conn.post(relative_path, body.to_json)
         end
       rescue ArgumentError
         raise "Missing configuration key(s)"
@@ -47,13 +48,15 @@ module Payhere
 
     # set authorization and authentication
     def create_connection
-      url = "#{Payhere.config.base_url}/api/#{Payhere.config.version}"
+      url = "https://api.payhere.africa" if Payhere.config.environment.eql?"production"
+      url = "https://api-sandbox.payhere.africa/api" if Payhere.config.environment.eql?"sandbox"
+      
       headers = {
         "Content-Type": 'application/json'
       }
+
       conn = Faraday.new(url: url)
       conn.headers = headers
-      url = "https://api-sandbox.payhere.africa/api/#{Payhere.config.version}" if Payhere.config.environment.eql?"sanbox"
 
       get_credentials
       conn.basic_auth(@username, @password)

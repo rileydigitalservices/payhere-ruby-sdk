@@ -29,7 +29,6 @@ Add the following configurations in an initializer file (for example, `config/in
 
 ```
 Payhere.configure do |config|
-  config.base_url = 'Payhere account base URL'
   config.version = 'Payhere API version you plan to use'
   config.envrionment = 'Specify if your testing the API or you are ready to do business'
   config.app_id = 'Payhere application id'

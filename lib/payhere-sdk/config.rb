@@ -5,21 +5,16 @@
 
 module Payhere
   class Config
-    attr_writer   :base_url
     attr_accessor :environment, :version, :app_id, 
-                  :username, :password
+                  :username, :password, :version
 
     def initialize
       @environment = nil
       @version = nil
-      @base_url = nil
       @app_id = nil
       @username = nil
       @password = nil
     end
 
-    def base_url
-      @base_url || 'https://api.payhere.africa'
-    end
   end
 end
